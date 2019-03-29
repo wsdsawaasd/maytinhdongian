@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form id="lop">
+    <label><input type="text" value="" id="text"></label>
+    <br/>
+    <input type=button value="1" onclick="calculation(this.value)">
+    <input type=button value="2" onclick="calculation(this.value)">
+    <input type=button value="3" onclick="calculation(this.value)">
+    <input type=button value="+" onclick="calculation(this.value)">
+    <br/>
+    <input type=button value="4" onclick="calculation(this.value)">
+    <input type=button value="5" onclick="calculation(this.value)">
+    <input type=button value="6" onclick="calculation(this.value)">
+    <input type=button value="-" onclick="calculation(this.value)">
+    <br/>
+    <input type=button value="7" onclick="calculation(this.value)">
+    <input type=button value="8" onclick="calculation(this.value)">
+    <input type=button value="9" onclick="calculation(this.value)">
+    <input type=button value="*" onclick="calculation(this.value)">
+    <br/>
+    <button type="reset"  >C</button>
+    <input type=button value="0" onclick="calculation(this.value)">
+    <input type=button value="=" onclick="text.value=eval(text.value)">
+    <input type=button value="/" onclick="calculation(this.value)">
+</form>
+<script>
+    function calculation(ts) {
+        text.value = text.value + ts;
+    }
+</script>
+
+</body>
+</html>
